@@ -1,6 +1,8 @@
 /* USER NAME */
 /* Creo una variabile il cui valore è inserito
-direttamente dall'utente attraverso prompt*/
+direttamente dall'utente attraverso prompt.
+Lo aggiungo tramite document.getElementById ('id').innerHTML 
+all'html*/
 
 const userName = prompt ('Inserisci il tuo nome');
 document.getElementById ('user-name').innerHTML = userName;
@@ -31,6 +33,8 @@ dei dati da parte dell'utente e creo una password aggiungendo
 un numero (22).Lo aggiungo tramite document.getElementById ('id').innerHTML 
 all'html*/
 
-const userNewPassword = userName + userLastName + userFavColor + 22;
-document.getElementById ('user-new-password').innerHTML = userNewPassword
+// const userNewPassword = userName + userLastName + userFavColor + 22;
+
+const userNewPassword = `${userName}${userLastName}${userFavColor}22`;
+document.getElementById ('user-new-password').innerHTML = userNewPassword;
 console.log(userNewPassword);
