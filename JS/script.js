@@ -33,8 +33,10 @@ dei dati da parte dell'utente e creo una password aggiungendo
 un numero (22).Lo aggiungo tramite document.getElementById ('id').innerHTML 
 all'html*/
 
+// Versione con concatenazione attraverso +
 // const userNewPassword = userName + userLastName + userFavColor + 22;
 
+// Versione con template literal
 const userNewPassword = `${userName}${userLastName}${userFavColor}22`;
 document.getElementById ('user-new-password').innerHTML = userNewPassword;
 console.log(userNewPassword);
