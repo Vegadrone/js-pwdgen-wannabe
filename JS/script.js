@@ -27,16 +27,18 @@ const userFavColor = prompt ('Inserisci il tuo colore preferito');
 document.getElementById ('user-favorite-color').innerHTML = userFavColor;
 console.log (userFavColor);
 
+/* CURRENT YEAR */
+const currentYear = "22"
+
 /* USER NEW PASSWORD */
 /* Metto insieme tutte le variabili generate dall'inserimento
 dei dati da parte dell'utente e creo una password aggiungendo 
-un numero (22).Lo aggiungo tramite document.getElementById ('id').innerHTML 
+un currentYear.Lo aggiungo tramite document.getElementById ('id').innerHTML 
 all'html*/
-
 // Versione con concatenazione attraverso +
-// const userNewPassword = userName + userLastName + userFavColor + 22;
+// const userNewPassword = userName + userLastName + userFavColor + currentYear;
 
 // Versione con template literal
-const userNewPassword = `${userName}${userLastName}${userFavColor}22`;
+const userNewPassword = `${userName}${userLastName}${userFavColor}${currentYear}`;
 document.getElementById ('user-new-password').innerHTML = userNewPassword;
 console.log(userNewPassword);
